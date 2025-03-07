@@ -1,0 +1,9 @@
+.ItemList {
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+}

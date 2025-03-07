@@ -1,0 +1,6 @@
+.Navbar p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px;
+    color: var(--mainColor);
+}

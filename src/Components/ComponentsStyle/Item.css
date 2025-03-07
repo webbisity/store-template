@@ -1,0 +1,32 @@
+.Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 400px;
+    height: 450px;
+}
+
+.Item .itemImgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    overflow: hidden;
+}
+
+.Item .itemImg {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.Item .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
