@@ -1,15 +1,18 @@
 import "./ComponentsStyle/ItemList.css";
 import Item from "./Item";
 
-const ItemList = () => {
+const ItemList = ({items}) => {
+
     return (
         <div className="ItemList">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+            {items && items.map((item) => {
+                return (
+                    console.log(item.Name + "item"),
+                    <Item item={item}/>
+                )
+            })}
         </div>
-    );
+);
 }
  
 export default ItemList;

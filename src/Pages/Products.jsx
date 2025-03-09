@@ -1,10 +1,22 @@
-import Item from "../Components/Item";
+import { useContext, useEffect, useState } from "react";
 import ItemList from "../Components/ItemList";
+import { DBContext } from "../DB/DBContext";
 
-const Products = () => {
+const Products = ({category}) => {
+
+    const {products} = useContext(DBContext);
+    const [filteredProducts, setFilteredProducts] = useState([]);
+
+    useEffect(() => {
+        if (products) {
+            const filtered = products.filter(product => ((product.Category.toLowerCase()) === (category.toLowerCase())));
+            setFilteredProducts(filtered);
+        }
+    }, [products, category]);
+
     return (
         <div className="Products">
-            <ItemList />
+            {filteredProducts.length > 0 ? <ItemList items={filteredProducts}/> : "No matching products found"}
         </div>
     );
 }
