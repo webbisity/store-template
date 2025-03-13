@@ -2,8 +2,9 @@ import { useContext, useEffect, useState } from "react";
 import ItemList from "../Components/ItemList";
 import { DBContext } from "../DB/DBContext";
 
-const Products = ({category}) => {
+const Products = ({category, itemID, setItemID}) => {
 
+    
     const {products} = useContext(DBContext);
     const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -16,7 +17,7 @@ const Products = ({category}) => {
 
     return (
         <div className="Products">
-            {filteredProducts.length > 0 ? <ItemList items={filteredProducts}/> : "No matching products found"}
+            {filteredProducts.length > 0 ? <ItemList items={filteredProducts} setItemID={setItemID}/> : "No matching products found"}
         </div>
     );
 }
