@@ -4,7 +4,6 @@ import { DBContext } from "../DB/DBContext";
 const Categories = ({setCategory}) => {
 
     const { categories } = useContext(DBContext);
-    categories && console.log(categories + "asdasd");
 
     return (
         <div className="Categories">

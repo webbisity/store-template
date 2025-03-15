@@ -1,0 +1,73 @@
+.ItemPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--mainBG);
+    color: var(--mainColor);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.ItemPage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ItemPage .itemDetails {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.ItemPage .itemDetails h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--mainColor);
+}
+
+.ItemPage .itemDetails p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: var(--mainColor);
+}
+
+.ItemPage .itemDetails .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+
+.ItemPage .itemDetails .description {
+    font-size: 1.1rem;
+    color: var(--mainColor);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.ItemPage .itemDetails .add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ItemPage .itemDetails .add-to-cart:hover {
+    background-color: #0056b3;
+}
